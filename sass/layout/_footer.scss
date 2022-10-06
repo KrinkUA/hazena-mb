@@ -22,4 +22,9 @@
 
 .footer__link{
     color: var(--accent-text-color-two);
+
+    &:hover,
+    &:focus{
+        color: var(--hv-fs-color);
+    }
 }

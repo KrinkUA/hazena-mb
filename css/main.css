@@ -81,6 +81,7 @@ address {
 
 :root {
   --main-font: Raleway, sans-serif;
+  --hv-fs-color: #2196F3;
   --main-txt-color: #ebeced;
   --accent-text-color: #000000;
   --accent-text-color-two: #d17c37;
@@ -115,6 +116,11 @@ address {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  color: var(--hv-fs-color);
 }
 
 .hero {
@@ -210,4 +216,7 @@ address {
 
 .footer__link {
   color: var(--accent-text-color-two);
+}
+.footer__link:hover, .footer__link:focus {
+  color: var(--hv-fs-color);
 }/*# sourceMappingURL=main.css.map */
