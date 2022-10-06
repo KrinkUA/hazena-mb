@@ -1,0 +1,9 @@
+.about__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about {
+  display: block;
+}/*# sourceMappingURL=about.css.map */

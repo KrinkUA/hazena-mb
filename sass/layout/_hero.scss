@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+    margin-bottom: 94px;
+
+    font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: var(--accent-text-color);
+  background-color: var(--accent-bg-color);
+}
