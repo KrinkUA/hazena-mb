@@ -1,20 +1,23 @@
 .about__section {
-  display: flex;
-  justify-content: space-evenly;
-
-  margin-bottom: 94px;
   
-  font-weight: 700;
-  font-size: 22px;
-  line-height: calc(36 / 22);
 
+  // margin-bottom: 40px;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-evenly;
+
+    
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: calc(36 / 22);
+  }
 }
 
 .about {
   display: flex;
   align-items: center;
-
 
   width: 450px;
 }

@@ -1,10 +1,19 @@
-
+.nav{
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 
 .nav__link {
   font-weight: 500;
   font-size: 22px;
   line-height: calc(24 / 22);
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus{
+    color: var(--hv-fs-color);
+  }
 }
 
 .nav__container{
@@ -14,13 +23,25 @@
 
     padding-top: 20px;
     padding-bottom: 20px;
+
+    border-bottom: 2px solid #d17c37
     
 }
 
 .nav__list{
     display: flex;
-    gap: 15px;
+    // gap: 15px;
     
+}
+
+.nav__item{
+  padding: 0px 10px;
+  
+  border-right: 1px solid rgba(254, 200, 3, 0.85);
+
+  &:last-child{
+    border-right: 0;
+  }
 }
 
 .nav__item:hover,

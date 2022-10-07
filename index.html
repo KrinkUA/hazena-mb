@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -35,37 +36,54 @@
               ></li
             >
             <li class="nav__item">
-              <a class="nav__link link" href="" target="_parent" rel="noopener noreferrer"
+              <a class="nav__link link" href="./úvodní_článek.html" target="_parent" rel="noopener noreferrer"
                 >Úvodní článek</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="" target="_parent" rel="noopener noreferrer"
+              <a class="nav__link link" href="./photo_gallery.html" target="_parent" rel="noopener noreferrer"
                 >Photo gallery</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="" target="_parent" rel="noopener noreferrer">Tým</a>
+              <a class="nav__link link" href="./tým.html" target="_parent" rel="noopener noreferrer">Tým</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="" target="_parent" rel="noopener noreferrer"
+              <a class="nav__link link" href="./trenéři.html" target="_parent" rel="noopener noreferrer">Trenéři</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./kontakty.html" target="_parent" rel="noopener noreferrer"
                 >Kontakty</a
               >
             </li>
           </ul>
         </nav>
+        <button
+          class="menu__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./img/icon.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
+
     </header>
 
     <main class="main">
       <section class="hero container">
-        <h1>Házená Mladá Boleslav</h1>
-        <img src="./img/hero.jpg" alt="hero" />
+        <h1 class="hero__title">Házená Mladá Boleslav</h1>
+        <img class="img" src="./img/hero.jpg" alt="hero" />
       </section>
 
       <section class="about__section container">
         <h2 class="visually-hidden">Házenou hrajem pro radost</h2>
-        <img src="./img/foto-1.jpg" alt="team" />
+        <img class="img" 
+        srcset=""
+        src="./img/foto-1.jpg" 
+        alt="team" />
         <p class="about"
           >Házenou hrajem pro radost branek dáme vždycky dost hrajou s náma taky holky pozor na nás
           my jsme z bolky!
@@ -73,6 +91,7 @@
       </section>
 
       <section class="location__container container">
+        <h2 class="visually-hidden">naše adresa</h2>
         <div class="location__address">
           <p class="location"
             >Mladá Boleslav U Stadionu 1322, Mladá Boleslav II 293 01 Mladá Boleslav, Česko</p
@@ -83,7 +102,7 @@
         <div class="map map__responsive">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7925896748866!2d14.910186715381515!3d50.4263358969837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470955b4f28ff403%3A0x50c1d36f381a45b6!2sU%20Stadionu%201322%2C%20Mlad%C3%A1%20Boleslav%20II%2C%20293%2001%20Mlad%C3%A1%20Boleslav!5e0!3m2!1scs!2scz!4v1665010331647!5m2!1scs!2scz"
-            width="600"
+            width="955"
             height="450"
             style="border: 0"
             allowfullscreen=""
@@ -100,7 +119,7 @@
           <img src="./img/logo.png" alt="logo" />
         </a>
         <div class="footer__adress">
-          <h2>Kontaktujte nás</h2>
+          <h2>Kontaktujte nás:</h2>
           <address>
             <ul class="footer_list list">
               <li>
@@ -109,7 +128,9 @@
                 </p>
               </li>
               <li>
-                <a class="footer__link link" href="mailto:radovan.kabrt@seznam.cz">radovan.kabrt@seznam.cz</a>
+                <a class="footer__link link" href="mailto:radovan.kabrt@seznam.cz"
+                  >radovan.kabrt@seznam.cz</a
+                >
               </li>
               <li>
                 <a class="footer__link link" href="tel:+420739254614">Číslo: 739 254 614</a>
@@ -119,5 +140,31 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./img/icon.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__menu list">
+        <li><a href="./index.html" class="menu__link link">Domů</a></li>
+        <li><a href="./úvodní_článek.html" class="menu__link link">Úvodní článek</a></li>
+        <li><a href="./photo_gallery.html" class="menu__link link">Photo gallery</a></li>
+        <li><a href="./tým.html" class="menu__link link">Tým</a></li>
+        <li><a href="./trenéři.html" class="menu__link link">Trenéři</a></li>
+        <li><a href="./kontakty.html" class="menu__link link">Kontakty</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
