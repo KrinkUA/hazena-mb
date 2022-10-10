@@ -7,6 +7,10 @@
     padding-bottom: 20px;
 
     border-top: 2px solid #d17c37;
+
+    @media screen and (max-width: 1199px) {
+        align-items: center;
+      }
 }
 
 .footer__adress{

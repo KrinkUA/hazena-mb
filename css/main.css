@@ -29,9 +29,26 @@ address {
 }
 
 .page {
+  margin-left: auto;
+  margin-right: auto;
   font-family: var(--main-font);
   color: var(--main-txt-color);
   background-color: var(--main-bg-color);
+}
+@media screen and (min-width: 480px) {
+  .page {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page {
+    max-width: 1200px;
+  }
 }
 
 .container {
@@ -289,6 +306,22 @@ address {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .about__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .about__section {
     display: -webkit-box;
@@ -297,6 +330,7 @@ address {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    gap: 30px;
     font-weight: 700;
     font-size: 22px;
     line-height: 1.6363636364;
@@ -313,6 +347,21 @@ address {
   width: 450px;
 }
 
+@media screen and (min-width: 480px) {
+  .location__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .location__address {
     display: -webkit-box;
@@ -349,6 +398,13 @@ address {
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 2px solid #d17c37;
+}
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__adress {
