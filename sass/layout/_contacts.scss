@@ -1,15 +1,24 @@
 .contacts__logo {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .contacts {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contacts__title {
@@ -31,13 +40,24 @@
   letter-spacing: 0.06em;
 }
 
-.contacts_link{
+.contacts__link {
   color: var(--accent-text-color-two);
 
   &:hover,
   &:focus {
     color: var(--hv-fs-color);
   }
+}
 
-  
+.contacts__img {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cont__img {
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
 }

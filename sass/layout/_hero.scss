@@ -1,30 +1,24 @@
 .hero {
-  
   margin-left: auto;
   margin-right: auto;
 
-  
-
-
-  @media screen and (min-width: 1200px) {
-    
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
-      margin-bottom: 94px;
-  
-      font-weight: 700;
+
+    margin-bottom: 94px;
+
+    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-  
+
     color: var(--accent-text-color);
     background-color: var(--accent-bg-color);
   }
 }
 
-
-.hero__title{
+.hero__title {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
